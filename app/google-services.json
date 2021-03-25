@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "168174123766",
+    "project_id": "hns-groups-v2",
+    "storage_bucket": "hns-groups-v2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168174123766:android:066aba7e531e85fda5cad7",
+        "android_client_info": {
+          "package_name": "com.example.hnsgroups"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168174123766-er42ka5n4lald947ddhfgu4f7tf7s4q8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hnsgroups",
+            "certificate_hash": "5cc4272dcec3e40e12a00ebe6aea241b9026697e"
+          }
+        },
+        {
+          "client_id": "168174123766-u2se6rc08gsi041i4o4bhj2omt9fl2ob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYecbthcbHqQOcsJd9zpaNRUYjrtxBL_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168174123766-u2se6rc08gsi041i4o4bhj2omt9fl2ob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
