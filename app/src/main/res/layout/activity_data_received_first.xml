@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataReceivedFirst"
+    android:background="#E5E5E5"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/backgroundforadd"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="55dp"
+                >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/go_back"
+                    android:id="@+id/goback"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Add Assignment"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subject"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="68dp"
+                    />
+
+                <EditText
+                    android:id="@+id/subjectFromUser"
+                    android:layout_width="300dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="105dp"
+                    android:background="@drawable/for_edit_text"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Please Mention Properly"
+                    android:paddingLeft="17dp"
+                    android:textSize="15sp"
+                    android:inputType="textPersonName"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="150dp"
+                    />
+
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="300dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="185dp"
+                    android:background="@drawable/for_edit_text"
+                    android:layout_centerHorizontal="true"
+                    android:hint="e.g // 7978000444"
+                    android:paddingLeft="17dp"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose the Type"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="240dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/Spinner1"
+                    android:layout_width="300dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="280dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/for_edit_text"
+                    android:paddingLeft="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assignmet to be done in "
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="330dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/Spinner2"
+                    android:layout_width="300dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="370dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/for_edit_text"
+                    android:paddingLeft="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Are you going to  provide  Material? \nA4 paper, Note"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="425dp"
+                    />
+
+                <RadioGroup
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="478dp"
+                    android:layout_marginLeft="45dp"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/radio_pirates"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:onClick="onRadioButtonClicked"
+                        />
+                    <RadioButton android:id="@+id/radio_ninjas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_marginLeft="50dp"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last date to Submit"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="515dp"
+                    />
+
+                <EditText
+                    android:id="@+id/CalenderEditText"
+                    android:layout_width="130dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="550dp"
+                    android:background="@drawable/for_edit_text"
+                    android:hint="01/01/2000"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp"
+                    android:inputType="date"
+                    />
+
+                <ImageView
+                    android:id="@+id/calenderButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="556dp"
+                    android:src="@drawable/calender"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Source(Document to be Written)"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="600dp"
+                    />
+                
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="635dp"
+                    android:layout_marginLeft="45dp"
+                    android:src="@drawable/upload"
+                    android:scaleType="centerCrop"
+                    android:onClick="onUploadButtonClicked"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-55dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/black_background"
+            android:text="submit"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:onClick="onSubmitButtonClicked"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -22,13 +22,20 @@ class MainActivity : AppCompatActivity() {
         auth = Firebase.auth
         currentUser = auth.currentUser
 
-        splashScreen.alpha = 0f;
-        splashScreen.animate().setDuration(2500).alpha(1f).withEndAction {
+        splashScreen.alpha = 0.0001f;
+        splashScreen.animate().setDuration(3000).alpha(1f).withEndAction {
+
+            if (currentUser == null) {
 
                 val i = Intent(this, LogInActivity::class.java)
                 startActivity(i)
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                 finish()
+            } else {
+                startActivity(Intent(this, MainActivity_for_Users::class.java))
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                finish()
+            }
         }
     }
 }

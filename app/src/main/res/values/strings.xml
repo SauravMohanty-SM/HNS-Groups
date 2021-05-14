@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">HNS Groups</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string-array name="Type_array">
+        <item>Assignments</item>
+        <item>Lab Record</item>
+        <item>Notes</item>
+    </string-array>
+
+    <string-array name="Paper_Type">
+        <item>A4 Paper</item>
+        <item>Lab Copy</item>
+        <item>General Copy</item>
+    </string-array>
+
+    <string name="stylish_text">
+        “ Give away your problems, \n your sorrows, <b>\n Your Assignments. </b>“
+    </string>
+
+    <string name="pay_later">
+        don’t worry still you can place an order <font color="#382275"><b>Click here</b></font>
+    </string>
+
 </resources>

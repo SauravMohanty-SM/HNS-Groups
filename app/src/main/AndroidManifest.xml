@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hnsgroups">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,9 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity_for_Users"></activity>
-        <activity android:name=".LogInActivity" />
-        <activity android:name=".MainActivity"
+        <activity android:name=".Data_Update_To_Firebase"></activity>
+        <activity android:name=".DataReceivedFirst" />
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/SplashScreen" />
+        <activity
+            android:name=".MainActivity_for_Users"
+            android:theme="@style/SplashScreen" />
+        <activity
+            android:name=".LogInActivity"
+            android:theme="@style/SplashScreen" />
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
